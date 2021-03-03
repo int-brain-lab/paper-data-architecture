@@ -317,7 +317,7 @@ def water_and_weight(trials, subjects):
             weight_frac = weight_frac.drop_duplicates()
             df.loc[df['subject_uuid'] == mouse, 'weight_loss'] = weight_frac.mean()
 
-        except Exception:
+        except IndexError:
             print('Mouse', mouse, 'missing data')
 
         # -- Water per body weight
