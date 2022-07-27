@@ -14,5 +14,11 @@ pip install -e .
 ```
 
 ## Set up access to Datajoint tables
-See setup config file [here](https://github.com/int-brain-lab/IBL-pipeline-light#install-package-and-set-up-the-configuration)
-Credentials - need to check with Shan whether these can be made public
+See [these](https://github.com/int-brain-lab/IBL-pipeline-light#install-package-and-set-up-the-configuration) instructions for how to connect to the datajoin database. Below are the credentials required
+```
+import datajoint as dj
+dj.config['database.host'] = "datajoint-public.internationalbrainlab.org" 
+dj.config['database.user'] = "ibl-public"
+dj.config['database.password'] = "ibl-public"  
+dj.config.save_global()
+```
