@@ -1,0 +1,6 @@
+README.md
+setup.py
+learning_variability.egg-info/PKG-INFO
+learning_variability.egg-info/SOURCES.txt
+learning_variability.egg-info/dependency_links.txt
+learning_variability.egg-info/top_level.txt
